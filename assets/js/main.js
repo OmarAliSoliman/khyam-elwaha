@@ -1,5 +1,6 @@
 $(document).ready(function () {
   var currentDir = $("a").css("direction");
+  console.log(currentDir);
 
   AOS.init();
 
@@ -17,6 +18,38 @@ $(document).ready(function () {
       arrow: true,
       fade: true,
       dots: false,
+    });
+  }
+
+  if ($(".services-slider").length) {
+    $(".services-slider").slick({
+      slidesToShow: 3.4,
+      rtl: currentDir == "rtl" ? true : false,
+      slidesToScroll: 1,
+      infinite: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     });
   }
 
@@ -41,8 +74,6 @@ $(document).ready(function () {
   if ($(".custom_select").length) {
     $(".custom_select").niceSelect();
   }
-
-  
 });
 
 $(window).on("load", function () {
