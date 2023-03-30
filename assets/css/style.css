@@ -195,9 +195,6 @@ p {
   float: none !important;
   background-color: transparent;
 }
-.nice-select .list .option {
-  padding-right: 0.5rem;
-}
 
 .splashscreen {
   width: 100vw;
@@ -263,7 +260,7 @@ p {
 
 .slick-arrow {
   z-index: 5;
-  bottom: 220px;
+  bottom: 50px;
   width: 41px;
   height: 41px;
   display: flex;
@@ -318,19 +315,28 @@ p {
   margin-right: 10px;
   font-size: 0.9rem;
 }
-.top-header .social ul {
+.top-header .social ul.social-list {
   display: flex;
   align-items: center;
   text-align: left;
   justify-content: flex-end;
 }
-.top-header .social ul li {
+.top-header .social ul.social-list li.social-li {
   margin-right: 15px;
 }
-.top-header .social ul a {
+.top-header .social ul.social-list a {
   color: #fff;
 }
-.top-header .social ul a i {
+.top-header .social ul.social-list a i {
+  color: #fff;
+}
+.top-header .social .nice-select {
+  float: none;
+  height: 30px;
+  line-height: 27px;
+  margin-right: 15px;
+}
+.top-header .social .nice-select .current {
   color: #fff;
 }
 
@@ -410,7 +416,7 @@ p {
 .navbar-and-slider .custom-navbar li:hover a::after {
   width: 100%;
 }
-.navbar-and-slider .slider .card-img {
+.navbar-and-slider .header-slider .card-img {
   height: calc(100vh - 188px);
 }
 
@@ -517,7 +523,7 @@ p {
   justify-content: flex-end;
 }
 .features .feature-img .card-img {
-  height: 75vh;
+  height: 600px;
 }
 .features .feature-img .card-img a {
   position: absolute;
@@ -630,6 +636,7 @@ p {
 /* ================================================================ */
 .contact-us {
   padding: 55px 0;
+  overflow: hidden;
 }
 .contact-us .section-header {
   margin-bottom: 37px;
@@ -930,6 +937,25 @@ p {
   position: relative;
 }
 
+/* ================================================================ */
+/* media */
+@media (max-width: 1366px) {
+  html {
+    font-size: 14px;
+  }
+  .footer-logo img, .logo img {
+    width: 170px;
+  }
+  .navbar-and-slider {
+    height: calc(100vh - 121px);
+  }
+  .navbar-and-slider .header-slider .card-img {
+    height: calc(100vh - 121px);
+  }
+  .contact-us-box .contact-info {
+    left: -100px;
+  }
+}
 /* ================================================================ */
 /* Shared styles  */
 .slick-arrow::before {

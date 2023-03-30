@@ -38,10 +38,16 @@
         </div>
         <div class="col-md-3">
           <div class="social">
-            <ul class="list-unstyled">
-              <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-              <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-              <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <ul class="list-unstyled social-list">
+              <li class="social-li"><a href=""><i class="fab fa-facebook-square"></i></a></li>
+              <li class="social-li"><a href=""><i class="fab fa-twitter-square"></i></a></li>
+              <li class="social-li"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              <li>
+                <select name="" id="" class="custom-select">
+                  <option value="">AR</option>
+                  <option value="">EN</option>
+                </select>
+              </li>
             </ul>
           </div>
         </div>
@@ -64,12 +70,12 @@
   <div class="navbar-and-slider">
     <div class="custom-navbar">
       <ul class="list-unstyled d-flex align-items-center">
-        <li class="active"><a href="">الرئيسية</a></li>
-        <li><a href="">من نحن</a></li>
-        <li><a href="">خدماتنا</a></li>
-        <li><a href="">ميزاتنا</a></li>
-        <li><a href="">البوم الصور</a></li>
-        <li><a href="">الفيديو</a></li>
+        <li class="active"><a href="./index.html">الرئيسية</a></li>
+        <li><a href="./about-us.html">من نحن</a></li>
+        <li><a href="./our-services.html">خدماتنا</a></li>
+        <li><a href="./features.html">ميزاتنا</a></li>
+        <li><a href="./photo-media.html">البوم الصور</a></li>
+        <li><a href="./video-media.html">الفيديو</a></li>
         <li><a href="">اتصل بنا</a></li>
       </ul>
     </div>
@@ -125,7 +131,7 @@
               للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او
               الانتقادات للتصميم الاساسي.
             </p>
-            <button class="btn-style">مشاهدة المزيد</button>
+            <a href="./about-us.html" class="btn-style">مشاهدة المزيد</a>
           </div>
         </div>
         <div class="col-md-12 col-lg-6">
@@ -142,7 +148,7 @@
     <div class="container">
       <div class="section-header">
         <h5>خدماتنا</h5>
-        <a href="#" class="btn-style-rounded">مشاهدة المزيد</a>
+        <a href="./our-services.html" class="btn-style-rounded">مشاهدة المزيد</a>
       </div>
       <div class="row align-items-center">
         <div class="col-md-12 col-lg-4">
@@ -205,7 +211,7 @@
   <div class="features">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <div class="feature-content">
             <div class="section-header">
               <h5>ميزاتنا</h5>
@@ -246,11 +252,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2"></div>
+        <div class="col-lg-1"></div>
         <div class="col-lg-5">
           <div class="feature-img">
             <div class="card-img">
-              <a href="" class="btn-style-rounded">مشاهدة المزيد</a>
+              <a href="./features.html" class="btn-style-rounded">مشاهدة المزيد</a>
               <div class="img-parent">
                 <img src="./assets/images/features.png" alt="features">
               </div>
@@ -267,23 +273,25 @@
     <div class="container">
       <div class="section-header">
         <h5>البوم الصور</h5>
-        <a href="#" class="btn-style-rounded">مشاهدة المزيد</a>
+        <a href="./photo-media.html" class="btn-style-rounded">مشاهدة المزيد</a>
       </div>
       <div class="row">
         <div class="col-lg-5">
           <div class="big-img">
-            <div class="card-img">
-              <div class="img-parent">
-                <a href="./assets/images/media1.png"><img src="./assets/images/media1.png" alt="media"></a>
+            <a href="./assets/images/media1.png" data-fancybox="gallery" rel="group1">
+              <div class="card-img">
+                <div class="img-parent">
+                  <img src="./assets/images/media1.png" alt="media">
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-lg-7">
           <div class="small-images">
             <ul class="list-unstyled d-flex">
               <li>
-                <a href="./assets/images/media2.png">
+                <a href="./assets/images/media2.png" data-fancybox="gallery" rel="group1">
                   <div class="card-img">
                     <div class="img-parent">
                       <img src="./assets/images/media2.png" alt="media">
@@ -292,7 +300,7 @@
                 </a>
               </li>
               <li>
-                <a href="./assets/images/media3.png">
+                <a href="./assets/images/media3.png" data-fancybox="gallery" rel="group1">
                   <div class="card-img">
                     <div class="img-parent">
                       <img src="./assets/images/media3.png" alt="media">
@@ -301,7 +309,7 @@
                 </a>
               </li>
               <li>
-                <a href="./assets/images/media4.png">
+                <a href="./assets/images/media4.png" data-fancybox="gallery" rel="group1">
                   <div class="card-img">
                     <div class="img-parent">
                       <img src="./assets/images/media4.png" alt="media">
@@ -310,7 +318,7 @@
                 </a>
               </li>
               <li>
-                <a href="./assets/images/media5.png">
+                <a href="./assets/images/media5.png" data-fancybox="gallery" rel="group1">
                   <div class="card-img">
                     <div class="img-parent">
                       <img src="./assets/images/media5.png" alt="media">
@@ -332,13 +340,14 @@
     <div class="container">
       <div class="section-header">
         <h5>الفيديو</h5>
-        <a href="#" class="btn-style-rounded">مشاهدة المزيد</a>
+        <a href="./video-media.html" class="btn-style-rounded">مشاهدة المزيد</a>
       </div>
       <div class="row">
         <div class="col-lg-12">
           <div class="video-section">
             <div class="card-img">
-              <a href="" class="play">
+              <a href="https://www.youtube.com/watch?v=1KRdjmNE8Qg&t=612s&ab_channel=ARAMTV-%D8%A2%D8%B1%D8%A7%D9%85%D8%AA%D9%8A%D9%81%D9%8A"
+                data-fancybox="gallery٢" rel="group٢" class="play">
                 <img src="./assets/images/play.svg" alt="play">
               </a>
               <div class="img-parent">
