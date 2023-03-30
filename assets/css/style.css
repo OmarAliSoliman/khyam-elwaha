@@ -560,12 +560,14 @@ p {
 .tablet-navbar {
   padding: 20px 0;
   display: none;
+  background-color: #193267;
+  margin-top: 10px;
 }
 .tablet-navbar li {
   margin-left: 74px;
 }
 .tablet-navbar li a {
-  color: #193267;
+  color: #fff;
   font-size: 1.1rem;
   position: relative;
   padding-bottom: 5px;
@@ -578,7 +580,7 @@ p {
   width: 0;
   transition: all 0.3s ease-in-out;
   height: 2px;
-  background-color: #193267;
+  background-color: #fff;
 }
 .tablet-navbar li.active a::after {
   width: 100%;
@@ -598,6 +600,7 @@ p {
 /* about-us-section */
 .about-us-section {
   padding: 25px 0 35px 0;
+  overflow: hidden;
 }
 .about-us-section h5 {
   font-weight: 600;
@@ -1288,6 +1291,9 @@ p {
   .video-media-card .card-img a img {
     width: 70%;
     margin: auto;
+  }
+  .feat-card .card-icon::before {
+    display: none;
   }
 }
 /* ================================================================ */

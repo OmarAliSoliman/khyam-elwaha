@@ -649,10 +649,12 @@ p {
 .tablet-navbar {
   padding: 20px 0;
   display: none;
+  background-color: $mainColor;
+  margin-top: 10px;
   li {
     margin-left: 74px;
     a {
-      color: $mainColor;
+      color: #fff;
       font-size: 1.1rem;
       position: relative;
       padding-bottom: 5px;
@@ -664,7 +666,7 @@ p {
         width: 0;
         transition: all 0.3s ease-in-out;
         height: 2px;
-        background-color: $mainColor;
+        background-color: #fff;
       }
     }
     &.active {
@@ -684,6 +686,7 @@ p {
   }
 }
 
+
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .navbar-and-slider .left-box {
     -webkit-backdrop-filter: blur(15px);
@@ -696,6 +699,7 @@ p {
 /* about-us-section */
 .about-us-section {
   padding: 25px 0 35px 0;
+  overflow: hidden;
   h5 {
     font-weight: 600;
     color: $mainColor;
@@ -1507,6 +1511,9 @@ p {
       width: 70%;
       margin: auto;
     }
+  }
+  .feat-card .card-icon::before{
+    display: none;
   }
 }
 
