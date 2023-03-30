@@ -2,7 +2,6 @@ $(document).ready(function () {
   var currentDir = $("a").css("direction");
   console.log(currentDir);
 
-  AOS.init();
 
   if ($(".bg-sidenavOpen").length) {
     $(".bg-sidenavOpen").on("click", function () {
@@ -83,7 +82,9 @@ $(document).ready(function () {
   
   }
 
-  new WOW().init();
+  if($(".animate__animated").length){
+    new WOW().init();
+  }
 
 });
 
