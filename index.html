@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="splash-active">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./assets/css/nice-select.css" />
   <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/animate.css">
   <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
@@ -24,13 +25,34 @@
 
 <body>
 
+  <!-- splash -->
+  <div class="splash">
+    <div class="wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+    </div>
+  </div>
+
+  <div class="bg-side-open"></div>
 
   <div class="side-nav">
     <div class="container-xxl">
+      <div class="close-nav">
+        <div class="menu_icon" data-cursor="-icon">
+          <div id="nav-icon1" class="open">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
       <div class="side-wrapper">
         <div class="side-links">
           <ul class="list-unstyled mb-0">
-            <li><a href="./index.html">الرئيسية</a></li>
+            <li class="active"><a href="./index.html">الرئيسية</a></li>
             <li><a href="./about-us.html">من نحن</a></li>
             <li><a href="./our-services.html">خدماتنا</a></li>
             <li><a href="./features.html">ميزاتنا</a></li>
@@ -113,25 +135,32 @@
   <div class="navbar-and-slider">
     <div class="custom-navbar">
       <ul class="list-unstyled d-flex align-items-center">
-        <li class="active"><a href="./index.html">الرئيسية</a></li>
-        <li><a href="./about-us.html">من نحن</a></li>
-        <li><a href="./our-services.html">خدماتنا</a></li>
-        <li><a href="./features.html">ميزاتنا</a></li>
-        <li><a href="./photo-media.html">البوم الصور</a></li>
-        <li><a href="./video-media.html">الفيديو</a></li>
-        <li><a href="">اتصل بنا</a></li>
+        <li class="active wow animate__animated animate__fadeIn" data-wow-delay="0.1s"><a
+            href="./index.html">الرئيسية</a></li>
+        <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.1s"><a href="./about-us.html">من نحن</a>
+        </li>
+        <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.2s"><a
+            href="./our-services.html">خدماتنا</a></li>
+        <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.3s"><a href="./features.html">ميزاتنا</a>
+        </li>
+        <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.4s"><a href="./photo-media.html">البوم
+            الصور</a></li>
+        <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s"><a href="./video-media.html">الفيديو</a>
+        </li>
+        <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.6s"><a href="">اتصل بنا</a></li>
       </ul>
     </div>
     <div class="left-box">
       <div class="left-content">
         <div class="content">
-          <h1>خيام الواحة</h1>
-          <h4>لتأجير خيم المناسبات</h4>
-          <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت
+          <h1 class="wow animate__animated animate__fadeInUp">خيام الواحة</h1>
+          <h4 class="wow animate__animated animate__fadeInUp">لتأجير خيم المناسبات</h4>
+          <p class="wow animate__animated animate__fadeInUp">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على
+            العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت
             تصاميم
           </p>
         </div>
-        <div class="button">
+        <div class="button wow animate__animated animate__fadeInUp">
           <button class="btn-style">مشاهدة المزيد</button>
         </div>
       </div>
@@ -147,7 +176,14 @@
       <div class="slider-item">
         <div class="card-img">
           <div class="img-parent">
-            <img src="./assets/images/header.png" alt="header">
+            <img src="./assets/images/slider2.png" alt="header">
+          </div>
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="card-img">
+          <div class="img-parent">
+            <img src="./assets/images/slider3.png" alt="header">
           </div>
         </div>
       </div>
@@ -161,7 +197,7 @@
       <h5>من نحن</h5>
       <div class="row align-items-center">
         <div class="col-md-12 col-lg-6">
-          <div class="about-content">
+          <div class="about-content  wow animate__animated animate__fadeInUp">
             <p>لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء
               كانت تصاميم مطبوعه … بروشور او فلاير على سبيل المثال … او نماذج مواقع انترنت …
             </p>
@@ -178,8 +214,8 @@
           </div>
         </div>
         <div class="col-md-12 col-lg-6">
-          <div class="about-img">
-            <img src="./assets/images/about_img.png" alt="about">
+          <div class="about-img  wow animate__animated animate__fadeInDown animation-debth2">
+            <img src="./assets/images/about_img.png" data-depth="0.5" alt="about">
           </div>
         </div>
       </div>
@@ -195,7 +231,7 @@
       </div>
       <div class="row align-items-center">
         <div class="col-md-12 col-lg-4">
-          <div class="serv-card">
+          <div class="serv-card  wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
             <div class="card-icon">
               <img src="./assets/images/icon1.svg" alt="icon">
             </div>
@@ -205,7 +241,7 @@
               </p>
             </div>
           </div>
-          <div class="serv-card">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
             <div class="card-icon yellow-icon">
               <img src="./assets/images/icon2.svg" alt="icon">
             </div>
@@ -217,14 +253,14 @@
           </div>
         </div>
         <div class="col-md-12 col-lg-4">
-          <div class="serv-card">
-            <div class="serv-img">
-              <img src="./assets/images/service.svg" alt="service">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+            <div class="serv-img animation-debth">
+              <img src="./assets/images/service.svg" data-depth="0.5" alt="service">
             </div>
           </div>
         </div>
         <div class="col-md-12 col-lg-4">
-          <div class="serv-card">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
             <div class="card-icon orange-icon">
               <img src="./assets/images/icon3.svg" alt="icon">
             </div>
@@ -234,7 +270,7 @@
               </p>
             </div>
           </div>
-          <div class="serv-card">
+          <div class="serv-card wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
             <div class="card-icon sky-icon">
               <img src="./assets/images/icon4.svg" alt="icon">
             </div>
@@ -260,7 +296,7 @@
               <h5>ميزاتنا</h5>
             </div>
             <div class="feature-list">
-              <div class="feat-card">
+              <div class="feat-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                 <div class="card-icon">
                   <img src="./assets/images/icon5.svg" alt="icon">
                 </div>
@@ -271,7 +307,7 @@
                 </div>
               </div>
 
-              <div class="feat-card">
+              <div class="feat-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                 <div class="card-icon">
                   <img src="./assets/images/icon6.svg" alt="icon">
                 </div>
@@ -282,7 +318,7 @@
                 </div>
               </div>
 
-              <div class="feat-card last-card">
+              <div class="feat-card last-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                 <div class="card-icon">
                   <img src="./assets/images/icon7.svg" alt="icon">
                 </div>
@@ -297,7 +333,7 @@
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-5">
-          <div class="feature-img">
+          <div class="feature-img wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
             <div class="card-img">
               <a href="./features.html" class="btn-style-rounded">مشاهدة المزيد</a>
               <div class="img-parent">
@@ -320,7 +356,7 @@
       </div>
       <div class="row">
         <div class="col-lg-5">
-          <div class="big-img">
+          <div class="big-img wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
             <a href="./assets/images/media1.png" data-fancybox="gallery" rel="group1">
               <div class="card-img">
                 <div class="img-parent">
@@ -333,7 +369,7 @@
         <div class="col-lg-7">
           <div class="small-images">
             <ul class="list-unstyled d-flex">
-              <li>
+              <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
                 <a href="./assets/images/media2.png" data-fancybox="gallery" rel="group1">
                   <div class="card-img">
                     <div class="img-parent">
@@ -342,7 +378,7 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
                 <a href="./assets/images/media3.png" data-fancybox="gallery" rel="group1">
                   <div class="card-img">
                     <div class="img-parent">
@@ -351,7 +387,7 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
                 <a href="./assets/images/media4.png" data-fancybox="gallery" rel="group1">
                   <div class="card-img">
                     <div class="img-parent">
@@ -360,7 +396,7 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                 <a href="./assets/images/media5.png" data-fancybox="gallery" rel="group1">
                   <div class="card-img">
                     <div class="img-parent">
@@ -379,7 +415,7 @@
 
 
   <!-- media video -->
-  <div class="media-video">
+  <div class="media-video wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
     <div class="container">
       <div class="section-header">
         <h5>الفيديو</h5>
@@ -417,22 +453,22 @@
         <form action="">
           <div class="row">
             <div class="col-lg-12">
-              <div class="form-group">
+              <div class="form-group wow animate__animated animate__fadeInDown" data-wow-delay="0.1s">
                 <input type="text" name="" id="" class="form-control" placeholder="الاسم">
               </div>
             </div>
             <div class="col-lg-12">
-              <div class="form-group">
+              <div class="form-group wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
                 <input type="email" name="" id="" class="form-control" placeholder="البريد الالكتروني">
               </div>
             </div>
             <div class="col-lg-12">
-              <div class="form-group">
+              <div class="form-group wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
                 <textarea name="" class="form-control" placeholder="الرسالة" id=""></textarea>
               </div>
             </div>
             <div class="col-lg-12">
-              <div class="btn-submit">
+              <div class="btn-submit wow animate__animated animate__fadeInDown" data-wow-delay="0.4s">
                 <button type="submit" class="btn-style">ارسال</button>
               </div>
             </div>
@@ -443,17 +479,17 @@
           <div class="info">
             <h5>تواصل معنا</h5>
             <ul class="list-unstyled">
-              <li>
+              <li class="wow animate__animated animate__fadeInRight" data-wow-delay="0.1s">
                 <i class="fas fa-map-marker-alt"></i>
                 <span>١٣ شارع الوليد بن زيد حي الشيخ</span>
               </li>
-              <li>
+              <li class="wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">
                 <a href="">
                   <i class="fas fa-mobile-alt"></i>
                   <span> 966 05556789 </span>
                 </a>
               </li>
-              <li>
+              <li class="wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
                 <a href="">
                   <i class="fas fa-envelope"></i>
                   <span> Info@gmail.com </span>
@@ -541,7 +577,10 @@
   <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/jquery.mCustomScrollbar.js"></script>
   <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/wow.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="./assets/js/loading.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 
