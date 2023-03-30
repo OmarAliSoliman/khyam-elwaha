@@ -25,6 +25,24 @@
 <body>
 
 
+  <div class="side-nav">
+    <div class="container-xxl">
+      <div class="side-wrapper">
+        <div class="side-links">
+          <ul class="list-unstyled mb-0">
+            <li><a href="./index.html">الرئيسية</a></li>
+            <li><a href="./about-us.html">من نحن</a></li>
+            <li><a href="./our-services.html">خدماتنا</a></li>
+            <li><a href="./features.html">ميزاتنا</a></li>
+            <li><a href="./photo-media.html">البوم الصور</a></li>
+            <li><a href="./video-media.html">الفيديو</a></li>
+            <li><a href="">اتصل بنا</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- top header -->
   <div class="top-header">
     <div class="container">
@@ -39,10 +57,16 @@
         </div>
         <div class="col-md-3">
           <div class="social">
-            <ul class="list-unstyled">
-              <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-              <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-              <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <ul class="list-unstyled social-list">
+              <li class="social-li"><a href=""><i class="fab fa-facebook-square"></i></a></li>
+              <li class="social-li"><a href=""><i class="fab fa-twitter-square"></i></a></li>
+              <li class="social-li"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              <li>
+                <select name="" id="" class="custom-select">
+                  <option value="">AR</option>
+                  <option value="">EN</option>
+                </select>
+              </li>
             </ul>
           </div>
         </div>
@@ -50,13 +74,37 @@
     </div>
   </div>
 
-
   <!-- logo -->
   <div class="logo text-center">
     <div class="container">
-      <a href="./index.html">
-        <img src="./assets/images/logo.svg" alt="logo">
-      </a>
+      <div class="wrapper">
+        <div class="menu_icon" data-cursor="-icon">
+          <div id="nav-icon1">
+            <!-- <span></span> -->
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <a href="./index.html">
+          <img src="./assets/images/logo.svg" alt="logo">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tablet-navbar">
+    <div class="container">
+      <ul class="list-unstyled d-flex align-items-center">
+        <li class="active"><a href="./index.html">الرئيسية</a></li>
+        <li><a href="./about-us.html">من نحن</a></li>
+        <li><a href="./our-services.html">خدماتنا</a></li>
+        <li><a href="./features.html">ميزاتنا</a></li>
+        <li><a href="./photo-media.html">البوم الصور</a></li>
+        <li><a href="./video-media.html">الفيديو</a></li>
+        <li><a href="">اتصل بنا</a></li>
+      </ul>
     </div>
   </div>
 
@@ -66,11 +114,11 @@
     <div class="custom-navbar">
       <ul class="list-unstyled d-flex align-items-center">
         <li class="active"><a href="">الرئيسية</a></li>
-        <li><a href="">من نحن</a></li>
-        <li><a href="">خدماتنا</a></li>
-        <li><a href="">ميزاتنا</a></li>
-        <li><a href="">البوم الصور</a></li>
-        <li><a href="">الفيديو</a></li>
+        <li><a href="./about-us.html">من نحن</a></li>
+        <li><a href="./our-services.html">خدماتنا</a></li>
+        <li><a href="./features.html">ميزاتنا</a></li>
+        <li><a href="./photo-media.html">البوم الصور</a></li>
+        <li><a href="./video-media.html">الفيديو</a></li>
         <li><a href="">اتصل بنا</a></li>
       </ul>
     </div>
@@ -156,65 +204,66 @@
   </div>
 
 
-    <!-- footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="footer-contact">
-              <h5>خيام الواحة</h5>
-              <p>
-                لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء
-                كانت تصاميم مطبوعه … بروشور او فلاير على سبيل المثال … او نماذج مواقع انترنت …
-              </p>
-              <p>
-                وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
-                للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او
-                الانتقادات للتصميم الاساسي.
-              </p>
-            </div>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="footer-contact">
+            <h5>خيام الواحة</h5>
+            <p>
+              لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء
+              كانت تصاميم مطبوعه … بروشور او فلاير على سبيل المثال … او نماذج مواقع انترنت …
+            </p>
+            <p>
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+              للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او
+              الانتقادات للتصميم الاساسي.
+            </p>
           </div>
-          <div class="col-lg-3">
-            <div class="footer-links">
-              <h4>روابط سريعة</h4>
-              <ul class="list-unstyled">
-                <li><a href="">الرئيسية</a></li>
-                <li><a href="">من نحن</a></li>
-                <li><a href="">خدماتنا</a></li>
-                <li><a href="">ميزاتنا</a></li>
-                <li><a href="">البوم الصور</a></li>
-              </ul>
-            </div>
+        </div>
+        <div class="col col-md-3 col-lg-3">
+          <div class="footer-links">
+            <h4>روابط سريعة</h4>
+            <ul class="list-unstyled">
+              <li><a href="">الرئيسية</a></li>
+              <li><a href="">من نحن</a></li>
+              <li><a href="">خدماتنا</a></li>
+              <li><a href="">ميزاتنا</a></li>
+              <li><a href="">البوم الصور</a></li>
+            </ul>
           </div>
-          <div class="col-lg-3">
-            <div class="footer-links">
-              <h4>روابط سريعة</h4>
-              <ul class="list-unstyled">
-                <li><a href="">عن الشركة</a></li>
-                <li><a href="">اتصل بنا</a></li>
-              </ul>
-            </div>
+        </div>
+        <div class="col col-md-3 col-lg-3">
+          <div class="footer-links">
+            <h4>روابط سريعة</h4>
+            <ul class="list-unstyled">
+              <li><a href="">عن الشركة</a></li>
+              <li><a href="">اتصل بنا</a></li>
+            </ul>
           </div>
-          <div class="col-lg-1">
-            <div class="footer-social">
-              <ul class="list-unstyled">
-                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-              </ul>
-            </div>
+        </div>
+        <div class="col-md-3 col-lg-1">
+          <div class="footer-social">
+            <ul class="list-unstyled">
+              <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
-  
-    <div class="footer-logo">
-      <div class="container">
-        <a href="./index.html">
-          <img src="./assets/images/logo.svg" alt="logo">
-        </a>
-      </div>
     </div>
-  
+  </footer>
+
+  <div class="footer-logo">
+    <div class="container">
+      <a href="./index.html">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </a>
+    </div>
+  </div>
+
 
 
 

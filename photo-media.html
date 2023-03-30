@@ -25,6 +25,24 @@
 <body>
 
 
+  <div class="side-nav">
+    <div class="container-xxl">
+      <div class="side-wrapper">
+        <div class="side-links">
+          <ul class="list-unstyled mb-0">
+            <li><a href="./index.html">الرئيسية</a></li>
+            <li><a href="./about-us.html">من نحن</a></li>
+            <li><a href="./our-services.html">خدماتنا</a></li>
+            <li><a href="./features.html">ميزاتنا</a></li>
+            <li><a href="./photo-media.html">البوم الصور</a></li>
+            <li><a href="./video-media.html">الفيديو</a></li>
+            <li><a href="">اتصل بنا</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- top header -->
   <div class="top-header">
     <div class="container">
@@ -39,10 +57,16 @@
         </div>
         <div class="col-md-3">
           <div class="social">
-            <ul class="list-unstyled">
-              <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-              <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-              <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <ul class="list-unstyled social-list">
+              <li class="social-li"><a href=""><i class="fab fa-facebook-square"></i></a></li>
+              <li class="social-li"><a href=""><i class="fab fa-twitter-square"></i></a></li>
+              <li class="social-li"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              <li>
+                <select name="" id="" class="custom-select">
+                  <option value="">AR</option>
+                  <option value="">EN</option>
+                </select>
+              </li>
             </ul>
           </div>
         </div>
@@ -50,16 +74,39 @@
     </div>
   </div>
 
-
   <!-- logo -->
   <div class="logo text-center">
     <div class="container">
-      <a href="./index.html">
-        <img src="./assets/images/logo.svg" alt="logo">
-      </a>
+      <div class="wrapper">
+        <div class="menu_icon" data-cursor="-icon">
+          <div id="nav-icon1">
+            <!-- <span></span> -->
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <a href="./index.html">
+          <img src="./assets/images/logo.svg" alt="logo">
+        </a>
+      </div>
     </div>
   </div>
 
+
+  <div class="tablet-navbar">
+    <div class="container">
+      <ul class="list-unstyled d-flex align-items-center">
+        <li class="active"><a href="./index.html">الرئيسية</a></li>
+        <li><a href="./about-us.html">من نحن</a></li>
+        <li><a href="./our-services.html">خدماتنا</a></li>
+        <li><a href="./features.html">ميزاتنا</a></li>
+        <li><a href="./photo-media.html">البوم الصور</a></li>
+        <li><a href="./video-media.html">الفيديو</a></li>
+        <li><a href="">اتصل بنا</a></li>
+      </ul>
+    </div>
+  </div>
 
   <!-- navbar_and_slider -->
   <div class="navbar-and-slider custom-navbar-and-slider">
@@ -110,7 +157,7 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo1.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo1.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo1.png" alt="">
@@ -121,7 +168,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo2.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo2.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo2.png" alt="">
@@ -132,7 +179,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo3.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo3.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo3.png" alt="">
@@ -143,7 +190,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo4.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo4.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo4.png" alt="">
@@ -154,7 +201,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo5.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo5.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo5.png" alt="">
@@ -165,7 +212,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo6.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo6.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo6.png" alt="">
@@ -176,7 +223,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo7.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo7.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo7.png" alt="">
@@ -187,7 +234,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo8.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo8.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo8.png" alt="">
@@ -198,7 +245,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo9.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo9.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo9.png" alt="">
@@ -209,7 +256,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo10.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo10.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo10.png" alt="">
@@ -220,7 +267,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo11.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo11.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo11.png" alt="">
@@ -231,7 +278,7 @@
         </div>
         <div class="col-lg-4">
           <div class="photo-media-card">
-            <a href="./assets/images/photo12.png">
+            <a data-fancybox="gallery3" rel="group3" href="./assets/images/photo12.png">
               <div class="card-img">
                 <div class="img-parent">
                   <img src="./assets/images/photo12.png" alt="">
@@ -263,7 +310,7 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col col-md-3 col-lg-3">
           <div class="footer-links">
             <h4>روابط سريعة</h4>
             <ul class="list-unstyled">
@@ -275,7 +322,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col col-md-3 col-lg-3">
           <div class="footer-links">
             <h4>روابط سريعة</h4>
             <ul class="list-unstyled">
@@ -284,7 +331,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-1">
+        <div class="col-md-3 col-lg-1">
           <div class="footer-social">
             <ul class="list-unstyled">
               <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
