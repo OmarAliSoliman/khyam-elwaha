@@ -55,8 +55,9 @@ $(document).ready(function () {
 
   $("#nav-icon1").click(function () {
     $(this).toggleClass("open");
-    $(".side_nav").toggleClass("side_nav_open");
-    $("html").toggleClass("side_active");
+    // $(this).parent().toggleClass("menu_icon-active");
+    $(".side-nav").toggleClass("side-nav-open");
+    $("html").toggleClass("side-active");
     // $(".my_navbar").toggleClass("removeBackground");
     // $("#mySidenav").toggleClass("openBurgerMenu");
     // $(".bg-sidenavOpen").toggleClass("burgerMenubodybg");
